@@ -42,4 +42,7 @@ window.onload=()=>{
     document.getElementById("menu").onclick=()=>{
         menu.enabled=true;
     }
+    menu.children.item(0).onclick=()=>{
+        menu.enabled=false;
+    }
 }

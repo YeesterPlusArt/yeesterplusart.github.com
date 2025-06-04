@@ -38,18 +38,25 @@ body{
     font-size: 30px;
 }
 #mainMenu{
+    z-index: 20000;
     background-color: #202025aa;
+    padding: 10px;
     position: fixed;
     top:0;
     width:100px;
     height: 100%;
     right:-100px;
+    transition:right cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#mainMenu[enabled]{
+    right:0px;
 }
 menulist{
     display: grid;
     justify-content: center;
     *{
         width: 100%;
+        height:30px;
     }
 }
 menuitem{
