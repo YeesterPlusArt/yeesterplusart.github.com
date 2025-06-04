@@ -1,13 +1,39 @@
 #top{
     position: fixed;
+    z-index: 9999;
     top:0;
     left:0;
     width:100%;
     height:50px;
     background-color: #202025aa;
-    border-bottom: #fffc;
+    border-bottom: #fffc 1px solid;
+    display: grid;
+    justify-content: left;
+    vertical-align:middle;
+    align-content: center;
+    padding-left:10px;
+}
+#menu{
+    position: fixed;
+    z-index:10000;
+    content: 󰍜;
+    top:10px;
+    right:10px;
+    width:30px !important;;
+    height:25px;
+    justify-content: center;
+    vertical-align: middle;
+    display: grid;
+    font-size: 20px;
+    text-anchor:middle;
+    padding-top:5px;
+    border-radius: 8px;
+}
+#menu:hover{
+    background-color: #fff3;
 }
 body{
     background-color: #202025;
     color:#fff;
+    font-size: 30px;
 }
