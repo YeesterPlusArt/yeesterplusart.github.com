@@ -1,5 +1,4 @@
-import st from "./lib/st"
-st(window)
+
 class MenuList extends HTMLElement {
     constructor() {
       super();
