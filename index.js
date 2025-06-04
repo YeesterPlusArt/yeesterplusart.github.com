@@ -12,6 +12,7 @@ class MenuList extends HTMLElement {
         if (val){
             var att=new Attr();
             att.name="enabled"
+            att.value="true"
             this.attributes.setNamedItem(att);
         }else{
             this.attributes.removeNamedItem("enabled")
@@ -39,10 +40,10 @@ class MenuItem extends HTMLElement {
 customElements.define("menuitem",MenuItem)
 window.onload=()=>{
     var menu = document.getElementById("mainMenu");
-    document.getElementById("menu").onclick=()=>{
+    document.getElementById("menu").onmouseup=()=>{
         menu.enabled=true;
     }
-    menu.children.item(0).onclick=()=>{
+    menu.children.item(0).onmouseup=()=>{
         menu.enabled=false;
     }
 }

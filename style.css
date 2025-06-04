@@ -48,7 +48,7 @@ body{
     right:-120px;
     transition:right cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-#mainMenu[enabled]{
+#mainMenu[enabled="true"]{
     right:0px;
 }
 menulist{
