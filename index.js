@@ -26,7 +26,7 @@ class MenuList extends HTMLElement {
     }
     // Element functionality written in here
 }
-customElements.define("menulist",MenuList)
+customElements.define("menulist-",MenuList)
 class MenuItem extends HTMLElement {
     isButton=false;
     constructor() {
@@ -36,7 +36,7 @@ class MenuItem extends HTMLElement {
 
     }
 }
-customElements.define("menuitemn",MenuItem)
+customElements.define("menuitem-",MenuItem)
 window.onload=()=>{
     var menu = document.getElementById("mainMenu");
     document.getElementById("menu").onmouseup=()=>{

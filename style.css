@@ -51,7 +51,7 @@ body{
 #mainMenu[enabled="true"]{
     right:0px;
 }
-menulist{
+menulist-{
     display: grid;
     justify-content: center;
     *{
@@ -59,9 +59,9 @@ menulist{
         height:fit-content;
     }
 }
-menuitemn{
+menuitem-{
     background-color: #fff0;
 }
-menuitem:hover{
+menuitem-:hover{
     background-color: #fff3;
 }
