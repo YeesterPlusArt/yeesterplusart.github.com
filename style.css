@@ -33,6 +33,7 @@
     background-color: #fff3;
 }
 body{
+    font-family:"Noto Sans" "Noto Emoji";
     background-color: #202025;
     color:#fff;
     font-size: 30px;
@@ -46,22 +47,33 @@ body{
     width:100px;
     height: 100%;
     right:-120px;
-    transition:right cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition:right cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
 }
 #mainMenu[enabled="true"]{
     right:0px;
 }
-menulist-{
-    display: grid;
-    justify-content: center;
-    *{
-        width: 100%;
-        height:fit-content;
-    }
-}
 menuitem-{
+    display: list-item;
+    list-style-type: none;
+    marker: none;
+    padding:3px;
+    border-radius: 8px;
+    user-select: none;
+    font-size: 20px;
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 100ms;
     background-color: #fff0;
 }
+
 menuitem-:hover{
     background-color: #fff3;
+}
+menulist-{
+    display: inline-block;
+    justify-content: top;
+    justify-items: top;
+    *{
+        width: flex;
+        height:fit-content;
+    }
+    backdrop-filter:blur(9px);
 }
