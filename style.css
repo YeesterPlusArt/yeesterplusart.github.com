@@ -37,3 +37,21 @@ body{
     color:#fff;
     font-size: 30px;
 }
+#mainMenu{
+    background-color: #202025aa;
+    position: fixed;
+    top:0;
+    width:100px;
+    height: 100%;
+    right:-100px;
+}
+menulist{
+    display: grid;
+    justify-content: center;
+    *{
+        width: 100%;
+    }
+}
+menuitem{
+    background-color: #fff3;
+}
