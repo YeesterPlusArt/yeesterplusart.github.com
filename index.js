@@ -37,7 +37,7 @@ class MenuItem extends HTMLElement {
 
     }
 }
-customElements.define("menuitem",MenuItem)
+customElements.define("menuitemn",MenuItem)
 window.onload=()=>{
     var menu = document.getElementById("mainMenu");
     document.getElementById("menu").onmouseup=()=>{
