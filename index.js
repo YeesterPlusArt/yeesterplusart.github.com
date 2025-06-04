@@ -9,8 +9,7 @@ class MenuList extends HTMLElement {
     set enabled(val){
         if(val == this.enabled)return;
         if (val){
-            var att=new Attr();
-            att.name="enabled"
+            var att=document.createAttribute("enabled");
             att.value="true"
             this.attributes.setNamedItem(att);
         }else{
