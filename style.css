@@ -1,3 +1,4 @@
+html { filter: url("#pixelate") }
 *{
     border:#0000
 }
