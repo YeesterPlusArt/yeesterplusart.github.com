@@ -1,3 +1,6 @@
+*{
+    border:#0000
+}
 #top{
     position: fixed;
     z-index: 9999;
